@@ -202,6 +202,30 @@
 //     age: number;
 // };
 
+// const input: Person[] = [
+//     { name: 'John', age: 13 },
+//     { name: 'Mark', age: 56 },
+//     { name: 'Rachel', age: 45 },
+//     { name: 'Nate', age: 67 },
+//     { name: 'Jeniffer', age: 65 }
+// ];
+// const ages = input.map(person => person.age);
+// const youngest = Math.min(...ages);
+// const oldest = Math.max(...ages);
+// const ageDifference = oldest - youngest;
+// console.log(ageDifference);
 
-
-
+// task 50
+// const singleNumber = (nums: (number | boolean)[]): number[] => {
+//     const countMap: { [key: number]: number } = {};
+//     nums.forEach(num => {
+//         if (typeof num === 'number') {
+//             countMap[num] = (countMap[num] || 0) + 1;
+//         }
+//     });
+//     return Object.keys(countMap)
+//         .filter(key => countMap[+key] === 1)
+//         .map(key => +key);
+// };
+// const result = singleNumber([4, 1, 2, 1, 2, 9, true]);
+// console.log(result);
