@@ -69,5 +69,104 @@
 // const result = findPowerOfTwo(n);
 // console.log(`n = ${n}, k = ${result}`);
 
+// task 40
+// function findMiddleNumber(arr: number[]){
+//     arr.sort((a, b) => a - b)
+//     const middleIndex = Math.floor(arr.length / 2)
+//     if(arr.length % 2 === 0){
+//         return (arr[middleIndex - 1] + arr[middleIndex]) / 2
+//     }else{
+//         return arr[middleIndex]
+//     }
+// }
+// const result = findMiddleNumber([1,2,3,4,5])
+// console.log(result);
+
+// task 41
+// type Book = {
+//     title: string;
+//     author: string;
+//     read: boolean;
+// };
+
+// const books: Book[] = [
+//     {
+//         title: "Halqa",
+//         author: "Akrom Malik",
+//         read: false,
+//     },
+//     {
+//         title: "Dunyoning ishlari",
+//         author: "O’tkir Hoshimov",
+//         read: true,
+//     },
+//     {
+//         title: "Iymon",
+//         author: "Shayx Muhammad Sodiq Muhammad Yusuf",
+//         read: true,
+//     },
+// ];
+
+// books.forEach((book, index) => {
+//     const status = book.read ? "o'qilgan" : "o'qilmagan";
+//     const authorPrefix = book.author.includes("hazrat") ? "hazratlarining" : "ning";
+//     console.log(`${index + 1}. ${book.author}${authorPrefix} ${book.title} kitobi ${status}`);
+// });
+
+// task 42
+// function findTextLength(arr: string[]): {[key: string]: number}{
+//     const result: {[key: string]: number} = {}
+//     for(const item of arr){
+//         result[item] = item.length;
+//     }
+//     return result
+// }
+// const result = findTextLength(['text', 'world', 'laptop'])
+// console.log(result);
+
+// task 43
+// function multipltValues (obj: Record<string, number>, n:number): Record<string, number> {
+//     const result: Record<string, number> = {}
+//     for(const key in obj){
+//         if(obj.hasOwnProperty(key)){
+//             result[key] = obj[key] * n;
+//         }
+//     }
+//     return result
+// }
+// const n = 5
+// const obj = {a: 2, b: 3, c: 4}
+// const res = multipltValues(obj, n)
+// console.log(res);
+
+// task 44
+// function getLevel(n: number): number[] {
+//     const result: number[] = [];
+//     for (let i = 1; i <= n; i++) {
+//         result.push(2 ** i);
+//     }
+//     return result;
+// }
+// console.log(getLevel(4));
+// console.log(getLevel(5));
+
+
+// task 45
+// function countAnimals(animals: string[]): AnimalCount {
+//   const animalCount: AnimalCount = {};
+//   for (const animal of animals) {
+//       if (animalCount[animal]) {
+//           animalCount[animal]++;
+//       } else {
+//           animalCount[animal] = 1;
+//       }
+//   }
+//   return animalCount;
+// }
+// const input = ['dog', 'chicken', 'cat', 'dog', 'chicken', 'chicken', 'rabbit'];
+// const output = countAnimals(input);
+// console.log(output);
+
+
 
 
