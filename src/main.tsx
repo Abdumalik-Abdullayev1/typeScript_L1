@@ -167,6 +167,41 @@
 // const output = countAnimals(input);
 // console.log(output);
 
+// task 46
+// function squareArray(arr: number[]): number[] {
+//     return arr.map(num => num * num);
+// }
+
+// const inputArray: number[] = [1, 2, 3, 4, 5];
+// const outputArray: number[] = squareArray(inputArray);
+
+// console.log(outputArray);
+
+// task 47
+// const numbers: number[] = [1, -4, 12, 0, -3, 29, -150];
+// const positiveSum = numbers
+//   .filter(num => num > 0)
+//   .reduce((accumulator, current) => accumulator + current, 0);
+// console.log(positiveSum);
+
+// task 48
+// function getInitials(input: string): string {
+//     return input
+//         .split(' ')
+//         .map(word => word.charAt(0))
+//         .join('');
+// }
+// const input = 'George Raymond Richard Martin';
+// const output = getInitials(input);
+// console.log(output); 
+
+
+// task 49
+// type Person = {
+//     name: string;
+//     age: number;
+// };
+
 
 
 
